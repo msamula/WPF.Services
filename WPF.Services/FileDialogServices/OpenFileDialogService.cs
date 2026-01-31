@@ -12,7 +12,7 @@ namespace WPF.Services.FileDialogServices
         /// </summary>
         /// <param name="fileDialogOptions">The dialog options; if null, default options are used.</param>
         /// <returns>The selected file path, or null if cancelled.</returns>
-        public string? OpenFile(FileDialogOptions? fileDialogOptions)
+        public string? OpenFile(FileDialogOptions? fileDialogOptions = null)
         {
             fileDialogOptions ??= new FileDialogOptions();
 
@@ -36,7 +36,7 @@ namespace WPF.Services.FileDialogServices
         /// </summary>
         /// <param name="fileDialogOptions">The dialog options; if null, default options are used.</param>
         /// <returns>An array of selected file paths, or an empty array if cancelled.</returns>
-        public string[] OpenFiles(FileDialogOptions? fileDialogOptions)
+        public string[] OpenFiles(FileDialogOptions? fileDialogOptions = null)
         {
             fileDialogOptions ??= new FileDialogOptions();
 

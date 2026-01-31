@@ -10,6 +10,6 @@
         /// </summary>
         /// <param name="fileDialogOptions">The dialog options; if null, default options are used.</param>
         /// <returns>The selected file path, or null if cancelled.</returns>
-        string? SaveFile(FileDialogOptions? fileDialogOptions);
+        string? SaveFile(FileDialogOptions? fileDialogOptions = null);
     }
 }

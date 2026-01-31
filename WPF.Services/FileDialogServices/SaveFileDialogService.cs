@@ -12,7 +12,7 @@ namespace WPF.Services.FileDialogServices
         /// </summary>
         /// <param name="fileDialogOptions">The dialog options; if null, default options are used.</param>
         /// <returns>The selected file path, or null if cancelled.</returns>
-        public string? SaveFile(FileDialogOptions? fileDialogOptions)
+        public string? SaveFile(FileDialogOptions? fileDialogOptions = null)
         {
             fileDialogOptions ??= new FileDialogOptions() { Title = "Save file as ..." };
 

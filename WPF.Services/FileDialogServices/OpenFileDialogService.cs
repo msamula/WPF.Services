@@ -20,7 +20,6 @@ namespace WPF.Services.FileDialogServices
             {
                 Title = fileDialogOptions.Title,
                 FileName = fileDialogOptions.Filename,
-                DefaultExt = fileDialogOptions.DefaultExt,
                 Filter = fileDialogOptions.Filter,
                 Multiselect = false,
                 ValidateNames = true,
@@ -44,7 +43,6 @@ namespace WPF.Services.FileDialogServices
             {
                 Title = fileDialogOptions.Title,
                 FileName = fileDialogOptions.Filename,
-                DefaultExt = fileDialogOptions.DefaultExt,
                 Filter = fileDialogOptions.Filter,
                 Multiselect = true,
                 ValidateNames = true,

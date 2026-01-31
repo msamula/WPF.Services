@@ -8,21 +8,18 @@
         /// <summary>
         /// Gets or sets the dialog title.
         /// </summary>
-        public string Title { get; set; } = "Select file to open ...";
+        public string Title { get; set; } = string.Empty;
 
         /// <summary>
         /// Gets or sets the default file name.
         /// </summary>
-        public string Filename { get; set; } = "Document";
-
-        /// <summary>
-        /// Gets or sets the default file extension.
-        /// </summary>
-        public string DefaultExt { get; set; } = ".txt";
+        public string Filename { get; set; } = string.Empty;
 
         /// <summary>
         /// Gets or sets the file type filter.
+        /// Example: "Text documents (.txt)|*.txt"
+        /// Example: "Text documents (.txt)|*.txt|DICOM Image (.dcm)|*.dcm"
         /// </summary>
-        public string Filter { get; set; } = "Text documents (.txt)|*.txt";
+        public string Filter { get; set; } = string.Empty;
     }
 }

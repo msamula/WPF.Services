@@ -19,14 +19,7 @@ namespace WPF.Services.FileDialogServices
                 InitialDirectory = Environment.GetFolderPath(specialFolder)
             };
 
-            bool? result = openFolderDialog.ShowDialog();
-
-            if (result.HasValue && result.Value)
-            {
-                return openFolderDialog.FolderName;
-            }
-
-            return null;
+            return openFolderDialog.ShowDialog() == true ? openFolderDialog.FolderName : null;
         }
     }
 }

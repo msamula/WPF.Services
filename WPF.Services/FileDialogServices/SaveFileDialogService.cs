@@ -14,7 +14,7 @@ namespace WPF.Services.FileDialogServices
         /// <returns>The selected file path, or null if cancelled.</returns>
         public string? SaveFile(FileDialogOptions? fileDialogOptions)
         {
-            fileDialogOptions ??= new FileDialogOptions();
+            fileDialogOptions ??= new FileDialogOptions() { Title = "Save file as ..." };
 
             Microsoft.Win32.SaveFileDialog dlg = new Microsoft.Win32.SaveFileDialog()
             {

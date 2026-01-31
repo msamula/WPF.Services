@@ -12,8 +12,8 @@
 		<Authors>Michael Samula</Authors>
 		<Product>MSamula.WPFServices</Product>
 		<Description>A collection of common, reusable services for WPF applications.</Description>
-		<RepositoryUrl></RepositoryUrl>
-		<PackageProjectUrl></PackageProjectUrl>
+		<RepositoryUrl>https://github.com/msamula/WPF.Services.git</RepositoryUrl>
+		<PackageProjectUrl>https://github.com/msamula/WPF.Services</PackageProjectUrl>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
 		<PackageTags>WPF;Services;MVVM;OpenFileDialog;OpenFolderDialog;SaveFileDialog</PackageTags>

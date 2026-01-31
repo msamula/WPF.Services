@@ -1,11 +1,8 @@
 ﻿namespace WPF.Services.FileDialogServices.Interfaces
 {
     /// <summary>
-    /// Service interface for opening folder selection dialogs.
+    /// Service interface for opening folder selection dialog.
     /// </summary>
-    /// <remarks>
-    /// This service provides a user-friendly way to let users select a folder from the file system.
-    /// </remarks>
     public interface IOpenFolderDialogService
     {
         /// <summary>

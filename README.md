@@ -43,6 +43,10 @@ git pull origin master
 - **OpenFolderDialogService**	=>	Service for handling folder open dialogs.
 - **SaveFileDialogService**	=>	Service for handling file save dialogs.
 
+### Application Services
+
+- **AppInfoService**	=>	Service for retrieving application assembly metadata.
+
 
 ## License
 MIT License

@@ -27,5 +27,19 @@ namespace WPF.Services.ApplicationServices
         /// <param name="executingAssembly">The assembly to extract information from.</param>
         /// <returns>The company name or the authors, or null if not available.</returns>
         string? GetCompanyName(Assembly executingAssembly);
+
+        /// <summary>
+        /// Gets the product description from the assembly.
+        /// </summary>
+        /// <param name="executingAssembly">The assembly to extract information from.</param>
+        /// <returns>The product description, or null if the description is not available.</returns>
+        string? GetProductDescription(Assembly executingAssembly);
+
+        /// <summary>
+        /// Gets the copyright information from the assembly.
+        /// </summary>
+        /// <param name="executingAssembly">The assembly to extract information from.</param>
+        /// <returns>The copyright string, or null if it is not available.</returns>
+        string? GetProductCopyright(Assembly executingAssembly);
     }
 }

@@ -15,5 +15,11 @@ namespace WPF.Services.ApplicationServices
 
         /// <inheritdoc/>
         public string? GetCompanyName(Assembly executingAssembly) => executingAssembly.GetCustomAttribute<AssemblyCompanyAttribute>()?.Company;
+
+        /// <inheritdoc/>
+        public string? GetProductDescription(Assembly executingAssembly) => executingAssembly.GetCustomAttribute<AssemblyDescriptionAttribute>()?.Description;
+
+        /// <inheritdoc/>
+        public string? GetProductCopyright(Assembly executingAssembly) => executingAssembly.GetCustomAttribute<AssemblyCopyrightAttribute>()?.Copyright;
     }
 }

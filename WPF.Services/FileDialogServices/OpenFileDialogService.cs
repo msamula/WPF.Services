@@ -7,11 +7,7 @@ namespace WPF.Services.FileDialogServices
     /// </summary>
     public class OpenFileDialogService : IOpenFileDialogService
     {
-        /// <summary>
-        /// Opens a file dialog for single file selection.
-        /// </summary>
-        /// <param name="fileDialogOptions">The dialog options; if null, default options are used.</param>
-        /// <returns>The selected file path, or null if cancelled.</returns>
+        /// <inheritdoc/>
         public string? OpenFile(FileDialogOptions? fileDialogOptions = null)
         {
             fileDialogOptions ??= new FileDialogOptions();
@@ -30,11 +26,7 @@ namespace WPF.Services.FileDialogServices
             return dlg.ShowDialog() == true ? dlg.FileName : null;
         }
 
-        /// <summary>
-        /// Opens a file dialog for multiple file selection.
-        /// </summary>
-        /// <param name="fileDialogOptions">The dialog options; if null, default options are used.</param>
-        /// <returns>An array of selected file paths, or an empty array if cancelled.</returns>
+        /// <inheritdoc/>
         public string[] OpenFiles(FileDialogOptions? fileDialogOptions = null)
         {
             fileDialogOptions ??= new FileDialogOptions();

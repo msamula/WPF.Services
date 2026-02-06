@@ -8,18 +8,18 @@ namespace WPF.Services.ApplicationServices
     public class AppInfoService : IAppInfoService
     {
         /// <inheritdoc/>
-        public string? GetProductName(Assembly executingAssembly) => executingAssembly.GetCustomAttribute<AssemblyProductAttribute>()?.Product;
+        public string? GetProductName() => Assembly.GetEntryAssembly()?.GetCustomAttribute<AssemblyProductAttribute>()?.Product;
 
         /// <inheritdoc/>
-        public string? GetAssemblyVersion(Assembly executingAssembly) => executingAssembly.GetName().Version?.ToString();
+        public string? GetAssemblyVersion() => Assembly.GetEntryAssembly()?.GetName()?.Version?.ToString();
 
         /// <inheritdoc/>
-        public string? GetCompanyName(Assembly executingAssembly) => executingAssembly.GetCustomAttribute<AssemblyCompanyAttribute>()?.Company;
+        public string? GetCompanyName() => Assembly.GetEntryAssembly()?.GetCustomAttribute<AssemblyCompanyAttribute>()?.Company;
 
         /// <inheritdoc/>
-        public string? GetProductDescription(Assembly executingAssembly) => executingAssembly.GetCustomAttribute<AssemblyDescriptionAttribute>()?.Description;
+        public string? GetProductDescription() => Assembly.GetEntryAssembly()?.GetCustomAttribute<AssemblyDescriptionAttribute>()?.Description;
 
         /// <inheritdoc/>
-        public string? GetProductCopyright(Assembly executingAssembly) => executingAssembly.GetCustomAttribute<AssemblyCopyrightAttribute>()?.Copyright;
+        public string? GetProductCopyright() => Assembly.GetEntryAssembly()?.GetCustomAttribute<AssemblyCopyrightAttribute>()?.Copyright;
     }
 }

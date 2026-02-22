@@ -2,7 +2,7 @@
 using System.Runtime.CompilerServices;
 using System.Text.Json;
 
-namespace WPF.Services.Json
+namespace WPF.Services.JsonServices
 {
     public class JsonService : IJsonService
     {

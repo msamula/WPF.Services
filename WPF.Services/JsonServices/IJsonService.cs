@@ -1,6 +1,6 @@
 ﻿using System.Text.Json;
 
-namespace WPF.Services.Json
+namespace WPF.Services.JsonServices
 {
     public interface IJsonService
     {

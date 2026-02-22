@@ -47,6 +47,10 @@ git pull origin master
 
 - **AppInfoService**	=>	Service for retrieving application assembly metadata.
 
+### Json Services
+
+- **JsonService**	=>	Service for reading and deserializing JSON files
+
 
 ## License
 MIT License

@@ -1,4 +1,6 @@
-﻿namespace WPF.Services.FileDialogServices.Interfaces
+﻿using WPF.Services.FileDialogServices.Models;
+
+namespace WPF.Services.FileDialogServices.Interfaces
 {
     /// <summary>
     /// Service interface for opening file dialogs.

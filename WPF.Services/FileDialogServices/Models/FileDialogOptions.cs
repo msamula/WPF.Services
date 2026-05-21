@@ -1,4 +1,4 @@
-﻿namespace WPF.Services.FileDialogServices
+﻿namespace WPF.Services.FileDialogServices.Models
 {
     /// <summary>
     /// Represents a set of options for configuring a file dialog.

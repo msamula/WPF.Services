@@ -1,4 +1,5 @@
 ﻿using WPF.Services.FileDialogServices.Interfaces;
+using WPF.Services.FileDialogServices.Models;
 
 namespace WPF.Services.FileDialogServices
 {

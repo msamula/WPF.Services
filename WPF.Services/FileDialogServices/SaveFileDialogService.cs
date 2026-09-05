@@ -1,4 +1,5 @@
-﻿using WPF.Services.FileDialogServices.Interfaces;
+﻿using Microsoft.Win32;
+using WPF.Services.FileDialogServices.Interfaces;
 using WPF.Services.FileDialogServices.Models;
 
 namespace WPF.Services.FileDialogServices
@@ -14,7 +15,7 @@ namespace WPF.Services.FileDialogServices
         {
             fileDialogOptions ??= new FileDialogOptions();
 
-            Microsoft.Win32.SaveFileDialog dlg = new Microsoft.Win32.SaveFileDialog()
+            SaveFileDialog dlg = new SaveFileDialog()
             {
                 Title = fileDialogOptions.Title,
                 FileName = fileDialogOptions.Filename,

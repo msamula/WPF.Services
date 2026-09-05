@@ -1,4 +1,5 @@
-﻿using WPF.Services.FileDialogServices.Interfaces;
+﻿using Microsoft.Win32;
+using WPF.Services.FileDialogServices.Interfaces;
 using WPF.Services.FileDialogServices.Models;
 
 namespace WPF.Services.FileDialogServices
@@ -13,7 +14,7 @@ namespace WPF.Services.FileDialogServices
         {
             fileDialogOptions ??= new FileDialogOptions();
 
-            Microsoft.Win32.OpenFileDialog dlg = new Microsoft.Win32.OpenFileDialog()
+            OpenFileDialog dlg = new OpenFileDialog()
             {
                 Title = fileDialogOptions.Title,
                 FileName = fileDialogOptions.Filename,
@@ -32,7 +33,7 @@ namespace WPF.Services.FileDialogServices
         {
             fileDialogOptions ??= new FileDialogOptions();
 
-            var dlg = new Microsoft.Win32.OpenFileDialog
+            var dlg = new OpenFileDialog
             {
                 Title = fileDialogOptions.Title,
                 FileName = fileDialogOptions.Filename,

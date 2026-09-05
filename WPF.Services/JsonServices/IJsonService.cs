@@ -27,5 +27,17 @@ namespace WPF.Services.JsonServices
         /// <returns>An asynchronous stream of <typeparamref name="T"/>.</returns>
         /// <exception cref="FileNotFoundException">Thrown when the file path does not exist.</exception>
         IAsyncEnumerable<T> StreamJsonAsync<T>(string path, JsonSerializerOptions? options = null, CancellationToken cancellationToken = default) where T : class;
+
+        /// <summary>
+        /// Asynchronously serializes a collection of <typeparamref name="T"/> to JSON and writes it to a file.
+        /// </summary>
+        /// <typeparam name="T">The type of the elements in the collection.</typeparam>
+        /// <param name="directorypath">The directory in which the file will be created.</param>
+        /// <param name="filename">The file name without extension; the JSON extension is appended automatically.</param>
+        /// <param name="value">The collection to serialize.</param>
+        /// <param name="options">Optional serializer options. If <see langword="null"/>, default options are used.</param>
+        /// <param name="cancellationToken">A token to cancel the write operation.</param>
+        /// <returns>A task that represents the asynchronous write operation.</returns>
+        Task WriteJsonAsync<T>(string directorypath, string filename, IEnumerable<T> value, JsonSerializerOptions? options = null, CancellationToken cancellationToken = default);
     }
 }

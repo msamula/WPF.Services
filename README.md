@@ -49,7 +49,7 @@ git pull origin master
 
 ### Json Services
 
-- **JsonService**	=>	Service for reading and deserializing JSON files
+- **JsonService**	=>	Service for reading and writing JSON files
 
 
 ## License

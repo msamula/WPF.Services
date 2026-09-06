@@ -49,8 +49,11 @@ git pull origin master
 
 ### Json Services
 
-- **JsonService**	=>	Service for reading and writing JSON files
+- **JsonService**	=>	Service for reading and writing JSON files.
 
+### Encryption Services
+
+- **DpapiEncryptionService**	=>	Service for encrypting and decrypting strings. Uses the Data Protection API (DPAPI). The encryption key is managed transparently by Windows.
 
 ## License
 MIT License
